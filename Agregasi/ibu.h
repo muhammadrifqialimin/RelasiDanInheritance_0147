@@ -6,11 +6,11 @@ class Ibu {
         string nama;
         vector<anak*> daftar_anak;
 
-        ibu(string pNama): nama(pNama){
+        Ibu(string pNama): nama(pNama){
             cout << "Ibu \"" << nama << "\" ada\n";
         }
 
-        ~ibu() {
+        ~Ibu() {
             cout << "Ibu \"" << nama << "\" tidak ada\n"
         }
         void tambahAnak(anak*);
@@ -20,7 +20,7 @@ class Ibu {
 void ibu::tambahAnak(anak* pAnak) {
     daftar_anak.push_back(pAnak);
 }
-void ibu::cetakAnak() {
+void Ibu::cetakAnak() {
     cout << "Daftar Anak Dari Ibu \"" << this->nama << "\":\n";
     for (int i = 0; i < daftar_anak.size(): i++){
         cout << daftar_anak(i)->nama << endl;
