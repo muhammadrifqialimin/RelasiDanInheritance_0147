@@ -11,21 +11,21 @@ class Ibu {
         }
 
         ~Ibu() {
-            cout << "Ibu \"" << nama << "\" tidak ada\n"
+            cout << "Ibu \"" << nama << "\" tidak ada\n";
         }
         void tambahAnak(anak*);
         void cetakAnak();
 };
 
-void ibu::tambahAnak(anak* pAnak) {
+void Ibu::tambahAnak(anak* pAnak) {
     daftar_anak.push_back(pAnak);
 }
 void Ibu::cetakAnak() {
     cout << "Daftar Anak Dari Ibu \"" << this->nama << "\":\n";
-    for (int i = 0; i < daftar_anak.size(): i++){
-        cout << daftar_anak(i)->nama << endl;
+    for (int i = 0; i < daftar_anak.size(); i++) {
+        cout << daftar_anak[i]->nama << endl;
     }
-    cout << endl;
+    cout <<endl;
 }
 
 #endif
